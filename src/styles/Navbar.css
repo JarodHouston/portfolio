@@ -1,0 +1,39 @@
+.App-header {
+  position: sticky;
+  top: 22px; /* The element will stick to the top once it reaches the top of the viewport */
+  width: 400px;
+  height: 38px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(4, 4, 16);
+  border-radius: 15px;
+  border: 1px solid rgb(57, 90, 93);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 4px;
+  gap: 2px;
+  z-index: 10;
+}
+
+.nav-item {
+  font-weight: 400;
+  font-size: 15px;
+  background-color: rgb(4, 4, 16);
+  border: 1px solid rgb(4, 4, 16);
+  color: white;
+  border-radius: 10px;
+  height: 30px;
+  padding: 0px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  /* background-color: rgb(59, 59, 79); */
+  background-color: rgb(32, 32, 71);
+  border: 1px solid rgb(87, 99, 139);
+}

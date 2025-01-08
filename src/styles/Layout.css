@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  min-height: 200vh;
+  min-width: 100vw;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  color: white;
+}
