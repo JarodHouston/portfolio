@@ -26,7 +26,7 @@ function Work() {
             <h1>Snowflake</h1>
             <h4>Technology Alliances Intern</h4>
             <h6>
-              <i>June - August 2026</i>
+              <i>June - August 2024</i>
             </h6>
             <p style={{ marginTop: "50px" }}>
               I created a dashboard using <code>Streamlit</code>, an open-source
@@ -95,8 +95,8 @@ function Work() {
             </h6>
             <p style={{ marginTop: "50px" }}>
               I am on a team of 5 developers where we are creating Pen Pals, a
-              learning platform for kids that introduces them more advanced math
-              and coding concepts. We are using <code>Typescript</code> and{" "}
+              learning platform for kids that introduces them to more advanced
+              math and coding concepts. We are using <code>Typescript</code> and{" "}
               <code>SCSS</code> for our framework.
             </p>
             <div style={{ textAlign: "center" }}>
