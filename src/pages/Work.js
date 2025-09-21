@@ -1,8 +1,12 @@
+import CiscoLogo from "../images/cisco.png";
+import HyperfabricImage from "../images/cisco-nexus-hyperfabric.png";
 import SnowflakeLogo from "../images/snowflake.png";
 import StreamlitLogo from "../images/streamlit.png";
 import NativeApps from "../images/native-apps.jpg";
 import TeachLALogo from "../images/teachla.svg";
 import PenPals from "../images/penpals.png";
+import ACMWLogo from "../images/acmWLogo.svg";
+import ClubHub from "../images/clubhub.png";
 import DevXLogo from "../images/devx.avif";
 import Finterview from "../images/finterview.png";
 import PopoutIcon from "../images/popout-icon.png";
@@ -13,6 +17,73 @@ function Work() {
     <div className="work-container">
       <div className="internship-container">
         <h1 className="internship-container-title">Internships</h1>
+        <div className="internship-body">
+          <div className="left-work-container">
+            <img src={CiscoLogo} alt="Cisco logo" className="cisco-image" />
+          </div>
+          <hr className="cisco-bar"></hr>
+          <div className="right-work-container">
+            <h1>Cisco</h1>
+            <h4>Technical Marketing Engineer Intern</h4>
+            <h6>
+              <i>June - September 2025</i>
+            </h6>
+            <p style={{ marginTop: "50px" }}>
+              I designed and developed a Python SDK that calls Cisco Nexus
+              Hyperfabric <code>API endpoints</code>, allowing users to
+              configure fabrics through simple, human-readable YAML files to
+              abstract away network complexity.
+            </p>
+            <p>
+              <div style={{ textAlign: "center" }}>
+                <img
+                  src={HyperfabricImage}
+                  alt="Cisco Nexus Hyperfabric"
+                  className="native-apps-img"
+                />
+              </div>
+            </p>
+            <p>
+              This project offers numerous features that enhances the user
+              experience:
+              <ol>
+                <li>
+                  Users can upload YAML file configurations. A rollback system
+                  was implemented to ensure that the creation and modifications
+                  of fabric-level objects are atomic operations.
+                </li>
+                <li>
+                  Users can export existing fabrics into YAML-structured files.
+                  A timestamp of the download is included to allow for simple
+                  state tracking.
+                </li>
+                <li>
+                  Real-time validation is performed while a user is generating
+                  their YAML files.
+                </li>
+              </ol>
+            </p>
+            <p>
+              Another major portion of this project was{" "}
+              <code>auto-generating code</code>. This project was reliant on a
+              known object model and set of API functions, so any additions or
+              modifications to either would require code to be written. In order
+              for this project to stay relevant, I wrote a separate Python
+              script that reads the object model and generates code to support
+              new objects or attributes, as well as changes to existing objects.
+              This auto-code generation was certainly a stretch goal and was not
+              fully implemented, but the major components were developed.
+            </p>
+            <p>
+              I grew a lot as a programmer as I built an entire Python SDK from
+              scratch and learned how to work with APIs, gracefully handle
+              errors, and build a <code>custom linter</code>. Through this
+              project, I was also exposed to how network fabrics can be
+              configured and how different topologies are effective for
+              different scenarios.
+            </p>
+          </div>
+        </div>
         <div className="internship-body">
           <div className="left-work-container">
             <img
@@ -129,6 +200,60 @@ function Work() {
                 <img class="popout-icon" src={PopoutIcon} alt="Popout icon" />
               </div>
             </a>
+          </div>
+        </div>
+        <div className="internship-body">
+          <div className="left-work-container">
+            <img src={ACMWLogo} alt="ACM W logo" className="snowflake-image" />
+          </div>
+          <hr className="acmw-bar"></hr>
+          <div className="right-work-container">
+            <h1>Tech Fellowship</h1>
+            <h4>Software Developer</h4>
+            <h6>
+              <i>January - May 2025</i>
+            </h6>
+            <p style={{ marginTop: "50px" }}>
+              Through ACM W, I completed a 15-week Tech Fellowship where I
+              worked on a team of 5 and gained valuable experience designing a
+              product and <code>building an MVP</code>.
+            </p>
+            <p>
+              The product we designed was a mobile app called ClubHub, where
+              college students can discover on-campus clubs and organizations as
+              well as project groups and start-ups. The inspiration came from
+              the idea that as an incoming college student, it can be difficult
+              to find the right clubs that fit your needs, and it may be
+              challenging to find or be accepted into opportunities where you
+              can gain relevant work experience.
+            </p>
+            <p>
+              We used <code>React Native</code> to develop this iOS and Android
+              compatible mobile app, and we used <code>Firebase</code> for our
+              database.
+            </p>
+            <div style={{ textAlign: "center" }}>
+              <img
+                src={ClubHub}
+                alt="Screenshot of 2 screens from Clubhub MVP"
+                className="pen-pals-img"
+                style={{ borderRadius: 8 }}
+              />
+            </div>
+            <p>
+              Throughout the fellowship, I gained and practiced{" "}
+              <code>Product Management</code> skills including identifying
+              customer needs, ideating a solution, and creating a road-map. I
+              also attended workshops on launching startups, networking, and
+              technical interviews.
+            </p>
+            <p>
+              At the end of the fellowship, my group and I pitched our MVP to
+              the rest of the club as well as a few industry professionals that
+              were invited. The culmination of our hard work was evident in the
+              positive feedback we received on our successful presentation and
+              product.
+            </p>
           </div>
         </div>
         <div className="internship-body">
